@@ -1,0 +1,16 @@
+.spaced {
+    padding: 40px 80px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Title {
+    font-family: 'Verdana', sans-serif;
+}
+
+#header {
+    background-image: url(imgref/polysq.png) !important;
+    background-repeat: no-repeat;
+}
