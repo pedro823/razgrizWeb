@@ -12,7 +12,9 @@ p {
 }
 
 #Start div.spacing {
+    margin: 25px 20px;
 }
+
 
 #header {
     background-image: url("../imgref/polysq.png");
