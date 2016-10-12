@@ -16,24 +16,27 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/npm.js"></script>
+     <script src="js/razgriz.js"></script>
 </head>
 <body>
 
-<div class="container-fluid spaced text-center animated fadeInDown" id="header">
-    <div class="w3-center w3-container" id="Title">
-        <img src="imgref/RazLogo.png" alt="Logo" style="width: 600px; height:300px; margin-top: -140px; margin-bottom: -100px;">
+<header>
+    <div class="container-fluid spaced text-center animated fadeInDown" id="header">
+        <div class="w3-center w3-container" id="Title">
+            <a href="#"><img src="imgref/RazLogo.png" alt="Logo" style="width: 600px; height:300px; margin-top: -140px; margin-bottom: -100px;"></a>
+        </div>
+        <div>
+            <em>Pedro Pereira, IME - USP</em>
+        </div>
     </div>
-    <div>
-        <em>Pedro Pereira, IME - USP</em>
-    </div>
-</div>
-<ul class="w3-navbar w3-black w3-border w3-card-4 animated fadeInDown" style="border: 0px !important;" id="InitNavbar">
-    <li><a class="w3-hover-red" href="#"><b>Bio</b></a></li>
-    <li><a class="w3-hover-red" href="#"><b>Links</b></a></li>
-</ul>
+    <ul class="w3-navbar w3-black w3-border w3-card-4 animated fadeInDown" style="border: 0px !important;" id="InitNavbar">
+        <li><a class="w3-hover-red" href="bio.html"><b>Bio</b></a></li>
+        <li><a class="w3-hover-red" href="#"><b>Links</b></a></li>
+    </ul>
+</header>
 <br />
 <div class="w3-row-padding" id="Start">
-    <div class="col-sm-2 w3-teal w3-panel spacing w3-card-4">
+    <div class="col-sm-2 w3-panel spacing">
         <p>Test</p>
         <p>
             <span class="glyphicon glyphicon-globe"></span>
@@ -41,8 +44,23 @@
         </p>
     </div>
     <br>
-    <div class="w3-rest w3-red spacing w3-panel w3-card-4" id="main">
-        <p>Main part</p>
+    <div class="w3-rest spacing w3-panel animated fadeIn" id="main">
+        <div style="background-color: #DDD; border-radius: 0px 0px 8px 8px !important;" class="w3-border">
+            <div id="latestProjTitle" class="w3-red w3-text-black w3-card-4">
+                <h2 class="w3-center">Latest projects</h2>
+            </div>
+            <div class="w3-container w3-accordion" id="latestProj">
+                <button onclick="openSection('post1')" class="w3-ripple w3-btn-block w3-center w3-black">
+                    <b>First Post</b>
+                </button>
+                <div id="post1" class="w3-accordion-content w3-container">
+                    <p>First post of the latestProjs</p>
+                </div>
+            </div>
+            <div class="wrapper-center" style="margin-bottom: 10px;">
+                <a href="#" class="w3-btn animated w3-white w3-ripple">See all</a>
+            </div>
+        </div>
     </div>
 </div>
 

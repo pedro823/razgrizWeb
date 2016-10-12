@@ -2,6 +2,10 @@
     padding: 40px 80px;
 }
 
+.wrapper-center {
+    text-align: center !important;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -20,3 +24,22 @@ p {
     background-image: url("../imgref/polysq.png");
     background-repeat: no-repeat;
 }
+
+#latestProjTitle {
+    padding: 2px 0;
+}
+
+#latestProj {
+    margin: 20px 0;
+}
+
+#latestProj button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*
+@font-face {
+    font-family: ;
+}
+*/
