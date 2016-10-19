@@ -2,6 +2,10 @@
     padding: 40px 80px;
 }
 
+.sparse {
+      padding-bottom: 20px;
+}
+
 .wrapper-center {
     text-align: center !important;
 }
