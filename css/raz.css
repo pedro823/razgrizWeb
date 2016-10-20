@@ -10,6 +10,11 @@
     text-align: center !important;
 }
 
+.expanded-segment {
+    background-color: #DDD;
+    border-radius: 0px 0px 8px 8px !important;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -40,6 +45,15 @@ p {
 #latestProj button {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#latest-news {
+    background-color: #EEE;
+    border-radius: 0 0 8px 8px !important;
+}
+
+#latest-news li {
+    font-size: 16px;
 }
 
 /*
