@@ -14,11 +14,16 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- Js scripts -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/npm.js"></script>
      <script src="js/razgriz.js"></script>
+     <!-- Posts module  -->
+     <script src="js/posts.js"></script>
+     <!-- Posts controllers -->
+     <script src="js/controllers/PostsController.js"></script>
 </head>
-<body>
+<body ng-app="Posts">
     <header>
         <div class="container-fluid spaced text-center animated fadeInDown" id="header">
             <div class="w3-center w3-container" id="Title">
@@ -35,5 +40,17 @@
             <li><a class="w3-hover-red" href="projects.html"><b>Projects</b></a></li>
         </ul>
     </header>
+    <br><br>
+    <div class="wrapper-center" ng-controller="PostList">
+        <div class="w3-card-8" style="margin-left: 18%; margin-right:18%" ng-repeat="post in postTexts">
+            <div class="spaced w3-red">
+                <h1>{{ post.title }}</h1>
+                <p style="font-size: 13px;">{{ post.date | date }}</p>
+            </div>
+            <div class="expanded-segment-square" style="padding-top: 15px; padding-bottom: 5px;">
+                <p>{{ post.text }}</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

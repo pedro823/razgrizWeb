@@ -15,6 +15,15 @@
     border-radius: 0px 0px 8px 8px !important;
 }
 
+.expanded-segment-square {
+    background-color: #DDD;
+    border-color: #000;
+    border-top-style: dashed;
+    border-bottom-style: solid;
+    border-bottom-color: #7B7B7B !important;
+    border-width: 1px;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
