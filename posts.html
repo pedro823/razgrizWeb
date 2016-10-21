@@ -42,7 +42,7 @@
     </header>
     <br><br>
     <div class="wrapper-center" ng-controller="PostList">
-        <div class="w3-card-8" style="margin-left: 18%; margin-right:18%" ng-repeat="post in postTexts">
+        <div class="w3-card-8 animated fadeInUp" style="margin-left: 18%; margin-right:18%; margin-bottom:40px;" ng-repeat="post in postTexts">
             <div class="spaced w3-red">
                 <h1>{{ post.title }}</h1>
                 <p style="font-size: 13px;">{{ post.date | date }}</p>
