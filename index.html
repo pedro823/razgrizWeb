@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/raz.css">
     <link rel="stylesheet" href="css/animate.css">
+    <!-- Github octicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
     <!-- Js scripts -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/npm.js"></script>
      <script src="js/razgriz.js"></script>
@@ -46,28 +49,29 @@
     <div class="col-sm-2 col-md-3 spacing animated fadeInUp">
         <div id="latest-news" class="w3-border" ng-controller="News">
             <div class="w3-card-4 w3-container" style="background-color: #af0202; color: #FFF">
-                <h4 class="w3-center">Relevant news</h4>
-                <p class="w3-center">Last updated:</p>
-                <p class="w3-center">{{ lastNews.lastChange | date }}</p>
+                <h4 class="w3-center">Relevant news <span class="octicon octicon-radio-tower"></span></h4>
+                <p class="w3-center subtitle">Last updated: {{ lastNews.lastChange | date }}</p>
             </div>
             <ul class="w3-ul w3-hoverable w3-center">
-                <a href="bio.html"><li class="w3-hover-pale-blue w3-round-large">s&oacute; um teste pra ver se funciona</li></a>
-                <a href="bio.html"><li class="w3-hover-pale-blue w3-round-large">Mais um pra ver se t&aacute; bonito</li></a>
+                <a href="bio.html"><li class="w3-hover-pale-red w3-round-large">s&oacute; um teste pra ver se funciona</li></a>
+                <a href="bio.html"><li class="w3-hover-pale-red w3-round-large">Mais um pra ver se t&aacute; bonito</li></a>
             </ul>
         </div>
     </div>
     <br>
     <div class="w3-rest spacing w3-panel animated fadeIn" id="main">
-        <div style="background-color: #DDD; border-radius: 0px 0px 8px 8px !important;" class="w3-border">
+        <div ng-controller="PostList" style="background-color: #DDD; border-radius: 0px 0px 8px 8px !important;" class="w3-border">
             <div id="latestProjTitle" class="w3-red w3-text-black w3-card-4">
-                <h2 class="w3-center">Latest posts</h2>
+                <h2 class="w3-center">Latest posts <span class="mega-octicon octicon-megaphone"></span></h2>
             </div>
             <div class="w3-container w3-accordion" id="latestProj">
-                <button onclick="openSection('post1')" class="w3-ripple w3-btn-block w3-center w3-black">
-                    <b>First Post</b>
-                </button>
-                <div id="post1" class="w3-accordion-content w3-container">
-                    <p>First post of the latestProjs</p>
+                <div ng-repeat="post in postTexts">
+                    <button ng-attr-id="{{ 'post' + $index }}" ng-click="openSec($event)" class="w3-ripple w3-btn-block w3-center w3-black">
+                        <b>{{ post.title }}</b>
+                    </button>
+                    <div class="w3-accordion-content w3-container">
+                        <p>{{ post.text }}</p>
+                    </div>
                 </div>
             </div>
             <div class="wrapper-center" style="margin-bottom: 10px;">
