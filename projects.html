@@ -51,13 +51,9 @@
                 <p style="font-size: 13px;"><em>{{ project.date | date }} - <b>{{ project.type }}</b></em></p>
             </div>
             <div class="expanded-segment-square" style="padding-top: 20px; padding-bottom: 5px;">
-                <div class="w3-third">
-                    <img ng-src="postImgs/proj/{{ project.image }}">
-                    <p style="margin-top: 10px;">{{ project.subtitle }}</p>
-                </div>
-                <div class="w3-rest">
-                    <p>{{ project.description }}</p>
-                </div>
+                <img ng-src="postImgs/proj/{{ project.image }}" style="width: 700px;">
+                <p class="image-subtitle" style="margin-top: 10px;"><em>{{ project.subtitle }}</em></p>
+                <p>{{ project.description }}</p>
                 <a ng-href="{{ project.link }}" class="w3-btn w3-red w3-hover-white"><span class="octicon octicon-search"></span><b> Link</b></a>
             </div>
         </div>

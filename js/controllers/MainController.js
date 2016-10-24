@@ -50,7 +50,7 @@ function($scope) {
             type: 'Site',
             description: 'Website desenvolvido em colaboração com Juliano Garcia.',
             date: new Date('2016', '9', '25'),
-            image: '',
+            image: 'WeakLaw',
             subtitle: 'gráfico-exemplo de nosso website',
             link: 'http://www.github.com/GreaterNumbersLaw/website'
         },
@@ -59,7 +59,7 @@ function($scope) {
             type: 'Game Jam',
             description: 'Participação da Brasil Game Jam de 2016, ficando entre os Top 5 times participantes.',
             date: new Date('2016', '7', '24'),
-            image: '',
+            image: 'BGJ2016.jpg',
             subtitle: 'Foto de nosso workspace durante o desafio, dentro da Brasil Game Show',
             link: 'http://globouniversidade.globo.com/page/projetos/ansiedade-e-expectativa-marcaram-o-ultimo-dia-da-globo-na-bgs'
         }
