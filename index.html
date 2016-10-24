@@ -50,11 +50,12 @@
         <div id="latest-news" class="w3-border" ng-controller="News">
             <div class="w3-card-4 w3-container" style="background-color: #af0202; color: #FFF">
                 <h4 class="w3-center">Relevant news <span class="octicon octicon-radio-tower"></span></h4>
-                <p class="w3-center subtitle">Last updated: {{ lastNews.lastChange | date }}</p>
+                <p class="w3-center subtitle">Last updated: {{ lastChange | date }}</p>
             </div>
             <ul class="w3-ul w3-hoverable w3-center">
-                <a href="bio.html"><li class="w3-hover-pale-red w3-round-large">s&oacute; um teste pra ver se funciona</li></a>
-                <a href="bio.html"><li class="w3-hover-pale-red w3-round-large">Mais um pra ver se t&aacute; bonito</li></a>
+                <div ng-repeat="news in lastNews">
+                    <a ng-href="{{ news.link }}"><li class="w3-hover-pale-red w3-round-large">{{ news.title }}</li></a>
+                </div>
             </ul>
         </div>
     </div>

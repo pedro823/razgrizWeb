@@ -1,8 +1,19 @@
 app.controller('News', ['$scope',
 function($scope) {
-    $scope.lastNews = {
-        lastChange: new Date('2016', '9', '21')
-    };
+    $scope.lastChange = new Date('2016', '9', '24');
+    $scope.lastNews = [
+        {
+            title: "só um teste para ver se tá legal",
+            date: new Date('2016', '9', '24'),
+            link: 'http://www.google.com',
+        },
+        {
+            title: 'mais um para ver se tá bonito',
+            date: new Date('2016', '9', '24'),
+            link: 'http://facebook.com'
+        }
+    ];
+    
 }]);
 app.controller('PostList', ['$scope',
 function($scope) {
