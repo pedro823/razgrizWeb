@@ -1,3 +1,15 @@
+function readJSON(file) {
+    var xmlhttp = new XMLHttpRequest();
+    var url = file;
+    xmlhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            var finalJSON = JSON.parse(this.responseText);
+        }
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+    return finalJSON;
+}
 app.controller('News', ['$scope',
 function($scope) {
     $scope.lastChange = new Date('2016', '9', '24');
@@ -44,6 +56,7 @@ function($scope) {
 
 app.controller('ProjectList', ['$scope',
 function($scope) {
+    // $scope.projects = readJSON('https://linux.ime.usp.br/~razgrizone/info/projectList.json');
     $scope.projects = [
         {
             title: 'Simulador da lei fraca dos grandes números',

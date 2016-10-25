@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "Simulador da lei fraca dos grandes numeros",
+            "type": "Site",
+            "description": "Website desenvolvido em colabora&ccedil;&atilde;o com Juliano Garcia.",
+            "date": "2016-10-25T02:00:00.000Z",
+            "image": "",
+            "subtitle": "gr&aacute;fico-exemplo de nosso website",
+            "link": "http://www.github.com/GreaterNumbersLaw/website"
+        },
+        {
+            "title": "Brasil Game Jam 2016",
+            "type": "Game Jam",
+            "description": "Participa&ccedil;&atilde;o da Brasil Game Jame de 2016, ficando entre os Top 5 colocados nos times participantes",
+            "image": "",
+            "date": "2016-08-24T03:00:00.000Z",
+            "subtitle": "Foto de nosso workspace durante o desafio, dentro da Brasil Game Show",
+            "link": "http://globouniversidade.globo.com/page/projetos/ansiedade-e-expectativa-marcaram-o-ultimo-dia-da-globo-na-bgs"
+        }
+    ]
+}
