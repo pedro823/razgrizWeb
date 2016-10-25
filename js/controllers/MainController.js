@@ -1,3 +1,15 @@
+function readJSON(file) {
+    var xmlhttp = new XMLHttpRequest();
+    var url = file;
+    xmlhttp.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            var finalJSON = JSON.parse(this.responseText);
+        }
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+    return finalJSON;
+}
 app.controller('News', ['$scope',
 function($scope) {
     $scope.lastChange = new Date('2016', '9', '24');
@@ -44,24 +56,25 @@ function($scope) {
 
 app.controller('ProjectList', ['$scope',
 function($scope) {
-    $scope.projects = [
-        {
-            title: 'Simulador da lei fraca dos grandes números',
-            type: 'Site',
-            description: 'Website desenvolvido em colaboração com Juliano Garcia.',
-            date: new Date('2016', '9', '25'),
-            image: '',
-            subtitle: 'gráfico-exemplo de nosso website',
-            link: 'http://www.github.com/GreaterNumbersLaw/website'
-        },
-        {
-            title: 'Brasil Game Jam 2016',
-            type: 'Game Jam',
-            description: 'Participação da Brasil Game Jam de 2016, ficando entre os Top 5 times participantes.',
-            date: new Date('2016', '7', '24'),
-            image: '',
-            subtitle: 'Foto de nosso workspace durante o desafio, dentro da Brasil Game Show',
-            link: 'http://globouniversidade.globo.com/page/projetos/ansiedade-e-expectativa-marcaram-o-ultimo-dia-da-globo-na-bgs'
-        }
-    ];
+    $scope.projects = readJSON('https://linux.ime.usp.br/~razgrizone/info/projectList.json');
+    // $scope.projects = [
+    //     {
+    //         title: 'Simulador da lei fraca dos grandes números',
+    //         type: 'Site',
+    //         description: 'Website desenvolvido em colaboração com Juliano Garcia.',
+    //         date: new Date('2016', '9', '25'),
+    //         image: '',
+    //         subtitle: 'gráfico-exemplo de nosso website',
+    //         link: 'http://www.github.com/GreaterNumbersLaw/website'
+    //     },
+    //     {
+    //         title: 'Brasil Game Jam 2016',
+    //         type: 'Game Jam',
+    //         description: 'Participação da Brasil Game Jam de 2016, ficando entre os Top 5 times participantes.',
+    //         date: new Date('2016', '7', '24'),
+    //         image: '',
+    //         subtitle: 'Foto de nosso workspace durante o desafio, dentro da Brasil Game Show',
+    //         link: 'http://globouniversidade.globo.com/page/projetos/ansiedade-e-expectativa-marcaram-o-ultimo-dia-da-globo-na-bgs'
+    //     }
+    // ];
 }]);
