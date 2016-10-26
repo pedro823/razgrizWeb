@@ -40,6 +40,10 @@
     color: #FFF;
 }
 
+.project-description a {
+    color: #000044;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }

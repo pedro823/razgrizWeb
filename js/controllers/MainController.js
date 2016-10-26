@@ -31,14 +31,10 @@ app.controller('PostList', ['$scope',
 function($scope) {
     $scope.postTexts = [
         {
-            title: "This part now features angularJS!",
-            text: "Now the post list is dynamic, so that it'll auto-grow as I make more posts.",
-            date: new Date('2016', '9', '21'),
-        },
-        {
-            title: "First Post",
-            text: "First post of latestProj",
-            date: new Date('2016', '9', '1'),
+            title: 'Site agora está live!',
+            text: 'O website agora se encontra vivo. Foi escrito do zero,' +
+            ' usando as bibliotecas: <br>&emsp;<b>CSS:</b> w3-css, Bootstrap e Animate-css <br>&emsp;<b>Javascript:</b> AngularJS',
+            date: new Date('2016', '9', '26')
         }
     ];
     $scope.openSec = function(event) {
@@ -61,7 +57,10 @@ function($scope) {
         {
             title: 'Simulador da lei fraca dos grandes números',
             type: 'Site',
-            description: 'Website desenvolvido em colaboração com Juliano Garcia.',
+            description: 'Website desenvolvido em colaboração com <a href="http://linux.ime.usp.br/~robotenique" target="_blank">Juliano Garcia.</a>' +
+            '<br>Utiliza de tecnologias como chartJS para mostrar um gráfico dinâmico, que demonstra a' +
+            ' <a href="https://pt.wikipedia.org/wiki/Lei_dos_grandes_n%C3%BAmeros" target="_blank">Lei Fraca dos Grandes Números</a>.<br>' +
+            'Um projeto feito para a aula de introdução à estatística.',
             date: new Date('2016', '9', '25'),
             image: 'WeakLaw',
             subtitle: 'gráfico-exemplo de nosso website',
@@ -70,7 +69,10 @@ function($scope) {
         {
             title: 'Brasil Game Jam 2016',
             type: 'Game Jam',
-            description: 'Participação da Brasil Game Jam de 2016, ficando entre os Top 5 times participantes.',
+            description: 'Participação da Brasil Game Jam de 2016, ficando entre os Top 5 times participantes.' +
+            '<br>Os times envolvidos foram desafiados a fazer um jogo dentro de 48h, dentro da maior feira de games' +
+            ' da américa latina: a <a href="http://www.brasilgameshow.com.br/" target="_blank">Brasil Game Show.</a>' +
+            '<br>Junto com Guilherme Moura (EACH-USP) e Marcelo Prado (Insper)',
             date: new Date('2016', '7', '24'),
             image: 'BGJ2016.jpg',
             subtitle: 'Foto de nosso workspace durante o desafio, dentro da Brasil Game Show',

@@ -16,9 +16,9 @@
     <!-- Github octicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
     <!-- Js scripts -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/npm.js"></script>
      <script src="js/razgriz.js"></script>
@@ -41,7 +41,7 @@
             <li><a class="w3-hover-red" href="bio.html"><b>Bio</b></a></li>
             <li><a class="w3-hover-red" href="links.html"><b>Links</b></a></li>
             <li><a class="w3-hover-red" href="posts.html"><b>Posts</b></a></li>
-            <li><a class="w3-red w3-hover-white" href="#"><b>Projects</b></a></li>
+            <li><a class="w3-red w3-hover-white" href=""><b>Projects</b></a></li>
         </ul>
     </header>
     <br><br>
@@ -51,10 +51,10 @@
                 <h1>{{ project.title }}</h1>
                 <p style="font-size: 13px;"><em>{{ project.date | date }} - <b>{{ project.type }}</b></em></p>
             </div>
-            <div class="expanded-segment-square" style="padding-top: 20px; padding-bottom: 5px;">
+            <div class="expanded-segment-square" style="padding-top: 20px; padding-bottom: 10px; padding-left: 40px; padding-right: 40px;">
                 <img ng-src="postImgs/proj/{{ project.image }}" style="width: 700px;">
                 <p class="image-subtitle" style="margin-top: 10px;"><em>{{ project.subtitle }}</em></p>
-                <p>{{ project.description }}</p>
+                <p ng-bind-html="project.description" class="project-description" style="font-size: 18px;"></p>
                 <a ng-href="{{ project.link }}" class="w3-btn w3-red w3-hover-white"><span class="octicon octicon-search"></span><b> Link</b></a>
             </div>
         </div>

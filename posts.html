@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/raz.css">
     <link rel="stylesheet" href="css/animate.css">
     <!-- Js scripts -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/npm.js"></script>
      <script src="js/razgriz.js"></script>
@@ -37,7 +37,7 @@
         <ul class="w3-navbar w3-black w3-border w3-card-4 animated fadeInDown" style="border: 0px !important;" id="InitNavbar">
             <li><a class="w3-hover-red" href="bio.html"><b>Bio</b></a></li>
             <li><a class="w3-hover-red" href="links.html"><b>Links</b></a></li>
-            <li><a class="w3-red w3-hover-white" href="posts.html"><b>Posts</b></a></li>
+            <li><a class="w3-red w3-hover-white" href=""><b>Posts</b></a></li>
             <li><a class="w3-hover-red" href="projects.html"><b>Projects</b></a></li>
         </ul>
     </header>
@@ -49,7 +49,7 @@
                 <p style="font-size: 13px;">{{ post.date | date }}</p>
             </div>
             <div class="expanded-segment-square" style="padding-top: 15px; padding-bottom: 5px;">
-                <p>{{ post.text }}</p>
+                <p ng-bind-html="post.text"></p>
             </div>
         </div>
     </div>
