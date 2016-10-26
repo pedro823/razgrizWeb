@@ -64,7 +64,7 @@ function($scope) {
             date: new Date('2016', '9', '25'),
             image: 'WeakLaw',
             subtitle: 'gráfico-exemplo de nosso website',
-            link: 'https://github.com/GreaterNumbersLaw/website'
+            link: 'https://linux.ime.usp.br/~robotenique/prog/wk/'
         },
         {
             title: 'Brasil Game Jam 2016',
@@ -72,7 +72,9 @@ function($scope) {
             description: 'Participação da Brasil Game Jam de 2016, ficando entre os Top 5 times participantes.' +
             '<br>Os times envolvidos foram desafiados a fazer um jogo dentro de 48h, dentro da maior feira de games' +
             ' da américa latina: a <a href="http://www.brasilgameshow.com.br/" target="_blank">Brasil Game Show.</a>' +
-            '<br>Junto com Guilherme Moura (EACH-USP) e Marcelo Prado (Insper)',
+            '<br>Junto com Guilherme Moura (EACH-USP) e Marcelo Prado (Insper), "Os Gracinhas" fizeram um jogo mobile ' +
+            'viciante, que conquistou os votos de visitantes da exposição no domingo. <a href="https://gracinhas.itch.io/">' +
+            'Confira o jogo aqui.</a>',
             date: new Date('2016', '7', '24'),
             image: 'BGJ2016.jpg',
             subtitle: 'Foto de nosso workspace durante o desafio, dentro da Brasil Game Show',

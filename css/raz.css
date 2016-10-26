@@ -16,6 +16,12 @@
     padding: 10px 75px;
 }
 
+.bio-segment p {
+    font-size: 17px;
+    font-style: lighter;
+    line-height: 1.0;
+}
+
 .expanded-segment {
     background-color: #DDD;
     border-radius: 0px 0px 8px 8px !important;
@@ -91,7 +97,7 @@ p {
 }
 
 #me:hover {
-    opacity: 0.7;
+    opacity: 0.88;
 }
 
 
