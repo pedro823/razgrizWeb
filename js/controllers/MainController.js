@@ -65,7 +65,7 @@ function($scope) {
             date: new Date('2016', '9', '25'),
             image: 'WeakLaw',
             subtitle: 'gráfico-exemplo de nosso website',
-            link: 'http://www.github.com/GreaterNumbersLaw/website'
+            link: 'https://github.com/GreaterNumbersLaw/website'
         },
         {
             title: 'Brasil Game Jam 2016',

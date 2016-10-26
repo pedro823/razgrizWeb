@@ -4,8 +4,9 @@
     <!-- Metas -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Title -->
+    <!-- Title & icon -->
     <title>Raƶgriƶ One</title>
+    <link rel="icon" href="imgref/razIcon.png">
     <!--CSS stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -49,7 +50,7 @@
     <div class="col-sm-2 col-md-3 spacing animated fadeInUp">
         <div id="latest-news" class="w3-border" ng-controller="News">
             <div class="w3-card-4 w3-container" style="background-color: #af0202; color: #FFF">
-                <h4 class="w3-center">Relevant news <span class="octicon octicon-radio-tower"></span></h4>
+                <h4 class="w3-center">Not&iacute;cias Relevantes <span class="octicon octicon-radio-tower"></span></h4>
                 <p class="w3-center subtitle">Last updated: {{ lastChange | date }}</p>
             </div>
             <ul class="w3-ul w3-hoverable w3-center">
@@ -63,7 +64,7 @@
     <div class="w3-rest spacing w3-panel animated fadeInUp" id="main">
         <div ng-controller="PostList" style="background-color: #DDD; border-radius: 0px 0px 8px 8px !important;" class="w3-border">
             <div id="latestProjTitle" class="w3-red w3-text-black w3-card-4">
-                <h2 class="w3-center">Latest posts <span class="mega-octicon octicon-rss"></span></h2>
+                <h2 class="w3-center">&Uacute;ltimos Posts <span class="mega-octicon octicon-rss"></span></h2>
             </div>
             <div class="w3-container w3-accordion" id="latestProj">
                 <div ng-repeat="post in postTexts">
