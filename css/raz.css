@@ -55,6 +55,11 @@
     color: #000044;
 }
 
+.monospace {
+    font-family: 'Courier New', monospace !important;
+    text-align: left !important;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }

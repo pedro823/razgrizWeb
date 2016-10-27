@@ -48,8 +48,9 @@
                 <h1>{{ post.title }}</h1>
                 <p style="font-size: 13px;">{{ post.date | date }}</p>
             </div>
-            <div class="expanded-segment-square" style="padding-top: 15px; padding-bottom: 5px;">
+            <div class="expanded-segment-square" style="padding-top: 15px; padding-bottom: 5px; padding-left: 30px; padding-right: 30px;">
                 <p ng-bind-html="post.wholeText"></p>
+                <p class="monospace" ng-bind-html="post.code"></p>
             </div>
         </div>
     </div>

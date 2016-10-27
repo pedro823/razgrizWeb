@@ -38,6 +38,7 @@ function($scope) {
             wholeText: 'O website agora se encontra vivo. Foi escrito do zero,' +
             ' usando as bibliotecas: <br>&emsp;<b>CSS:</b> w3-css, Bootstrap e Animate-css <br>&emsp;<b>Javascript:</b> AngularJS',
             postNo: '00001',
+            code: 'int main() {<br>&emsp;&emsp;printf("Hello world!\\n");<br>&emsp;&emsp;return 0;<br>}',
         }
         // {
         //     title: '',
