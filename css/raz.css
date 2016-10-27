@@ -71,7 +71,7 @@ p {
 
 #header {
     background-image: url("../imgref/polysq.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 #latestProjTitle {
@@ -85,6 +85,10 @@ p {
 #latestProj button {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#latestProj h2:hover {
+    color: #f22;
 }
 
 #latest-news {

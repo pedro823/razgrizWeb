@@ -34,8 +34,16 @@ function($scope) {
             title: 'Site agora está live!',
             text: 'O website agora se encontra vivo. Foi escrito do zero,' +
             ' usando as bibliotecas: <br>&emsp;<b>CSS:</b> w3-css, Bootstrap e Animate-css <br>&emsp;<b>Javascript:</b> AngularJS',
-            date: new Date('2016', '9', '26')
+            date: new Date('2016', '9', '26'),
+            wholeText: 'O website agora se encontra vivo. Foi escrito do zero,' +
+            ' usando as bibliotecas: <br>&emsp;<b>CSS:</b> w3-css, Bootstrap e Animate-css <br>&emsp;<b>Javascript:</b> AngularJS',
+            postNo: '00001',
         }
+        // {
+        //     title: '',
+        //     text: '',
+        //     date: ,
+        // }
     ];
     $scope.openSec = function(event) {
         var obj = event.target.nextElementSibling;
