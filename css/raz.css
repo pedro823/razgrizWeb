@@ -27,6 +27,10 @@
     color: #119;
 }
 
+.blue-links a {
+    color: #119;
+}
+
 .expanded-segment {
     background-color: #DDD;
     border-radius: 0px 0px 8px 8px !important;

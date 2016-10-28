@@ -31,6 +31,46 @@ app.controller('PostList', ['$scope',
 function($scope) {
     $scope.postTexts = [
         {
+            title: 'Por que "Razgriz One?"',
+            text: '&emsp;Me perguntam "por que Razgriz One?" bastante.' +
+            '<br>&emsp;<b>Razgriz</b> vem de um jogo para Playstation 2 chamado Ace Combat 5: The Unsung War.' +
+            ' É um jogo de guerra de aviões-caça.',
+            date: new Date('2016', '9', '28'),
+            wholeText: '&emsp;Me perguntam "por que Razgriz One?" bastante.' +
+            '<br>&emsp;<b>Razgriz</b> vem de um jogo para Playstation 2 chamado <b>Ace Combat 5: The Unsung War </b>.' +
+            ' É um jogo de guerra de aviões-caça. Um resumo curto da história do jogo,' +
+            ' é uma guerra entre os países Osea e Yuktobania, dentro do mundo de <a href="http://acecombat.wikia.com/wiki/Strangereal">Strangereal</a>' +
+            ', um mundo muito parecido com a Terra. <br>&emsp;Desde a declaração de guerra, Nenhum dos presidentes dos dois países havia entrado novamente em seus escitórios: ' +
+            'Os dois foram capturados antes da guerra, mantidos em uma prisão no Norte, e todas as suas declarações haviam sido forjadas pelos generais superiores de cada país.' +
+            ' O esquadrão do jogador, primeiramente chamado de Wardog, é o primeiro a descobrir a verdade, e fazer tudo a parar a guerra.' +
+            ' O termo vem de <a href="https://youtu.be/Hz8HTPGQpBU?t=1h21m22s">uma lenda</a> do jogo, descrita em um poema: <em>' +
+            '<br><br>The Demon of Razgriz <br><br> (The Demon of the North Sea) <br><br>' +
+            '<br>When history witnesses a great change, Razgriz reveals itself, first as a dark demon.' +
+            "<br>As a demon, it uses it's power to rain death upon the land, and then it dies" +
+            '<br>However, after a period of slumber, Razgriz returns...' +
+            '<br><br>Amidst the eternal waves of time' +
+            '<br>From a ripple of change shall the storm rise' +
+            '<br>Out of the abyss peer the eyes of a demon' +
+            '<br>Behold the Razgriz, its wings of black sheath' +
+            '<br><br>The demon soars through dark skies' +
+            '<br>Fear and death trail its shadow beneath' +
+            '<br>Until men united wield a hallowed sabre' +
+            '<br>In final reckoning, the beast is slain' +
+            '<br><br>As the demon sleeps, man turns on man' +
+            '<br>His own blood and madness soon cover the earth' +
+            '<br>From the depths of despair awaken the Razgriz' +
+            '<br>Its raven wings ablaze in majestic light.' +
+            '<br><br></em>&emsp;Basicamente, essa lenda conta de um demônio residente do mar do Norte, que ao nascer destrói tudo que vê, até ser derrotado.' +
+            ' Ele ressurge como um fantasma, mas quando isso acontece, ele semeia bondande pela terra.' +
+            '<br>&emsp;Depois de uma parte do jogo, inimigos começam a utilizar esse conto para <a href="https://youtu.be/Hz8HTPGQpBU?t=2h37m">referir-se ao esquadrão Wardog</a>.' +
+            ' Para eles, o esquadrão é igual ao demônio de Razgriz - destruindo tudo que passam sobre, e imparáveis.' +
+            ' O esquadrão acata o nome após um tempo. após <a href="https://youtu.be/Hz8HTPGQpBU?t=2h1m20s">esse acontecimento</a>, os pilotos são reconhecidos como abatidos, mas são recuperados e ' +
+            'trocam seus nomes para Razgriz. A partir daí, fazem de tudo para parar a guerra.' +
+            '<br>Razgriz One seria o primeiro piloto do esquadrão, e é esse o nome que escolhi.',
+            postNo: '00002',
+            code: '',
+        },
+        {
             title: 'Site agora está live!',
             text: 'O website agora se encontra vivo. Foi escrito do zero,' +
             ' usando as bibliotecas: <br>&emsp;<b>CSS:</b> w3-css, Bootstrap e Animate-css <br>&emsp;<b>Javascript:</b> AngularJS',
