@@ -31,6 +31,42 @@ app.controller('PostList', ['$scope',
 function($scope) {
     $scope.postTexts = [
         {
+            title: 'Canais de Youtube relacionados a programação',
+            text: '&emsp;Há um tempo, venho recomendando alguns canais de Youtube para amigos e ' +
+            'colegas de classe. Decidi então fazer uma lista de alguns canais, a maioria sem muito reconhecimento, que alguns podem se interessar.',
+            date: new Date('2016', '9', '29'),
+            wholeText: '&emsp;Há um tempo, venho recomendando alguns canais de Youtube para amigos e ' +
+            'colegas de classe. Decidi então fazer uma lista de alguns canais, a maioria sem muito reconhecimento, que alguns podem se interessar.' +
+            '<br><em>Todos os nomes contém links para o canal.</a></em>' +
+            '<br><a href="https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A" target="_blank"><b>Sirajology</b></a><br>' +
+            'Um canal que utiliza muito a maleabilidade da linguagem Python para fazer tudo: desde redes neurais e machine learning até data science' +
+            ' e análise sentimental. Os vídeos são bastante "mão na massa", então é pouca explicação e bastante código.' +
+            '<br><a href="https://www.youtube.com/user/devcentral" target="_blank"><b>F5 DevCentral</b></a><br>' +
+            'Esse canal é da <a href="http://f5.com" target="_blank">f5 networks</a>, que trabalha com serviços de proteção de DDoS, cloud, escala de DNS e mais. ' +
+            'No canal, além de um monte de vídeos explicando como usar os programas deles, há vídeos sobre alguns métodos de criptografia, como a ECC (Elyptic curve criptography),' +
+            ' e tokenização de dados. Os vídeos desse tipo são meio raros no canal, mas vale dar uma olhada mesmo assim.' +
+            '<br><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target="_blank"><b>3Blue1Brown</b></a><br>' +
+            'Explica, de uma maneira fácil de compreender, assuntos matemáticos como álgebra linear, fractais, curvas que preenchem espaço, música, e muito mais.' +
+            ' O autor sempre visa a intuitividade - sem anotar nada, você sai do vídeo sabendo mais.' +
+            '<br><a href="https://www.youtube.com/channel/UCqbkm47qBxDj-P3lI9voIAw" target="_blank"><b>danooct1</b></a><br>' +
+            'Um canal muito mais de diversão, que pega malwares antigos para DOS, Windows 95, 98, ME e XP, e até alguns sistemas operacionais inesperados, ' +
+            'como Symbian para Smartphones antigos, e testa eles na frente da câmera. É muito interessante ver como o rumo de malwares mudou de "tela azul mortal"' +
+            ' para malwares silenciosos que roubam seus dados sem você saber.' +
+            '<br><a href="https://www.youtube.com/user/gigafide" target="_blank"><b>Tinkernut</b></a> e <a href="https://www.youtube.com/channel/UCipr-y52SQGyMX-CQ2xk3jA" target="_blank"><b>Tinkernut Labs</b></a><br>' +
+            'Para os que gostam de Arduino, Raspberry Pi, Internet of Things e Hacking, esse canal é para vocês. O host ensina a fazer servidores de e-mail, um smartwatch a partir de peças velhas, ' +
+            'um cluster computer de Raspberry Pis, câmeras de segurança e muito mais.' +
+            '<br><a href="https://www.youtube.com/channel/UCNovoA9w0KnxyDP5bGrOYzg" target="_blank"><b>Tek Syndicate</b></a><br>' +
+            'Um canal de notícias de hardware de computador. Eu faria um post inteiro sobre canais de hardware, mas pus esse aqui porque o podcast deles, "The Tek",' +
+            ' é um podcast que ao mesmo tempo é relaxante, é bem informativo.' +
+            '<br><a href="https://www.youtube.com/user/standupmaths" target="_blank"><b>Standupmaths</b></a><br>' +
+            'Um matemático que faz shows de standup. Embora no canal dele não tenha os shows que ele faz, ele sempre traz assuntos muito interessantes para falar, como' +
+            ' "Por que a TV NTSC é 29.97 frames por segundo?", "Quantos vídeos de Youtube são possíveis de serem feitos?", e mais.' +
+            '<br><a href="https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA" target="_blank"><b>Computerphile</b></a><br>' +
+            'Óbvio.',
+            postNo: '00003',
+            code: '',
+        },
+        {
             title: 'Por que "Razgriz One?"',
             text: '&emsp;Me perguntam "por que Razgriz One?" bastante.' +
             '<br>&emsp;<b>Razgriz</b> vem de um jogo para Playstation 2 chamado Ace Combat 5: The Unsung War.' +
@@ -39,11 +75,11 @@ function($scope) {
             wholeText: '&emsp;Me perguntam "por que Razgriz One?" bastante.' +
             '<br>&emsp;<b>Razgriz</b> vem de um jogo para Playstation 2 chamado <b>Ace Combat 5: The Unsung War </b>.' +
             ' É um jogo de guerra de aviões-caça. Um resumo curto da história do jogo,' +
-            ' é uma guerra entre os países Osea e Yuktobania, dentro do mundo de <a href="http://acecombat.wikia.com/wiki/Strangereal">Strangereal</a>' +
+            ' é uma guerra entre os países Osea e Yuktobania, dentro do mundo de <a href="http://acecombat.wikia.com/wiki/Strangereal" target="_blank">Strangereal</a>' +
             ', um mundo muito parecido com a Terra. <br>&emsp;Desde a declaração de guerra, Nenhum dos presidentes dos dois países havia entrado novamente em seus escitórios: ' +
             'Os dois foram capturados antes da guerra, mantidos em uma prisão no Norte, e todas as suas declarações haviam sido forjadas pelos generais superiores de cada país.' +
             ' O esquadrão do jogador, primeiramente chamado de Wardog, é o primeiro a descobrir a verdade, e fazer tudo a parar a guerra.' +
-            ' O termo vem de <a href="https://youtu.be/Hz8HTPGQpBU?t=1h21m22s">uma lenda</a> do jogo, descrita em um poema: <em>' +
+            ' O termo vem de <a href="https://youtu.be/Hz8HTPGQpBU?t=1h21m22s" target="_blank">uma lenda</a> do jogo, descrita em um poema: <em>' +
             '<br><br>The Demon of Razgriz <br><br> (The Demon of the North Sea) <br><br>' +
             '<br>When history witnesses a great change, Razgriz reveals itself, first as a dark demon.' +
             "<br>As a demon, it uses it's power to rain death upon the land, and then it dies" +
@@ -62,9 +98,9 @@ function($scope) {
             '<br>Its raven wings ablaze in majestic light.' +
             '<br><br></em>&emsp;Basicamente, essa lenda conta de um demônio residente do mar do Norte, que ao nascer destrói tudo que vê, até ser derrotado.' +
             ' Ele ressurge como um fantasma, mas quando isso acontece, ele semeia bondande pela terra.' +
-            '<br>&emsp;Depois de uma parte do jogo, inimigos começam a utilizar esse conto para <a href="https://youtu.be/Hz8HTPGQpBU?t=2h37m">referir-se ao esquadrão Wardog</a>.' +
+            '<br>&emsp;Depois de uma parte do jogo, inimigos começam a utilizar esse conto para <a href="https://youtu.be/Hz8HTPGQpBU?t=2h37m" target="_blank">referir-se ao esquadrão Wardog</a>.' +
             ' Para eles, o esquadrão é igual ao demônio de Razgriz - destruindo tudo que passam sobre, e imparáveis.' +
-            ' O esquadrão acata o nome após um tempo. após <a href="https://youtu.be/Hz8HTPGQpBU?t=2h1m20s">esse acontecimento</a>, os pilotos são reconhecidos como abatidos, mas são recuperados e ' +
+            ' O esquadrão acata o nome após um tempo. após <a href="https://youtu.be/Hz8HTPGQpBU?t=2h1m20s" target="_blank">esse acontecimento</a>, os pilotos são reconhecidos como abatidos, mas são recuperados e ' +
             'trocam seus nomes para Razgriz. A partir daí, fazem de tudo para parar a guerra.' +
             '<br>Razgriz One seria o primeiro piloto do esquadrão, e é esse o nome que escolhi.',
             postNo: '00002',
@@ -79,12 +115,7 @@ function($scope) {
             ' usando as bibliotecas: <br>&emsp;<b>CSS:</b> w3-css, Bootstrap e Animate-css <br>&emsp;<b>Javascript:</b> AngularJS',
             postNo: '00001',
             code: 'int main() {<br>&emsp;&emsp;printf("Hello world!\\n");<br>&emsp;&emsp;return 0;<br>}',
-        }
-        // {
-        //     title: '',
-        //     text: '',
-        //     date: ,
-        // }
+        },
     ];
     $scope.openSec = function(event) {
         var obj = event.target.nextElementSibling;
