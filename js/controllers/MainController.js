@@ -135,6 +135,18 @@ function($scope) {
     // $scope.projects = readJSON('https://linux.ime.usp.br/~razgrizone/info/projectList.json');
     $scope.projects = [
         {
+            title: 'HackathonUSP 2016',
+            type: 'Hackathon',
+            description: 'Menção honrosa na participação do Hackathon feito pela USP em colaboração com a IBM.' +
+            '<br>O grupo foi composto por Pedro Pereira, Raphael Gusmão, Breno Helfstein e Caio Lopes. O grupo focou no tema "Ética em desenvolvimento e pesquisa",' +
+            ' e fez um website com o intuito de aprimorar o ensino da ética em pesquisa por meio de perguntas e respostas.' +
+            '<br>O projeto pode ser conferido <a href="http://aprendetica.herokuapp.com/">aqui</a>.<br><em>Feito em HTML, CSS, PHP e javascript, utilizando a framework Laravel</em>',
+            date: new Date('2016', '10', '6'),
+            image: 'hackUSP.jpg',
+            subtitle: 'Nosso workspace durante o Hackathon',
+            link: 'https://devpost.com/software/aprendetica',
+        },
+        {
             title: 'Simulador da lei fraca dos grandes números',
             type: 'Site',
             description: 'Website desenvolvido em colaboração com <a href="http://linux.ime.usp.br/~robotenique" target="_blank">Juliano Garcia.</a>' +
