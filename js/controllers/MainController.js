@@ -31,6 +31,20 @@ app.controller('PostList', ['$scope',
 function($scope) {
     $scope.postTexts = [
         {
+            title: 'Começando a migração para Ruby',
+            text: '&emsp;Embora a rede linux não suporte criação e manutenção de um servidor rails para os sites daqui, começei a migrar meu site para' +
+            ' ruby on rails, para ver se funcionaria de um jeito legal. Assim, a criação de posts seria muito, muito mais fácil, e fora a experiência' +
+            ' que eu vou adquirir. Hackathons seriam 100x mais fáceis se eu souber rails na ponta da língua, por exemplo, criando databases rápidos e' +
+            ' fazendo o site ser um site sem nenhum mocking.',
+            date: new Date('2017', '2', '3'),
+            wholeText: '&emsp;Embora a rede linux não suporte criação e manutenção de um servidor rails para os sites daqui, começei a migrar meu site para' +
+            ' ruby on rails, para ver se funcionaria de um jeito legal. Assim, a criação de posts seria muito, muito mais fácil, e fora a experiência' +
+            ' que eu vou adquirir. Hackathons seriam 100x mais fáceis se eu souber rails na ponta da língua, por exemplo, criando databases rápidos e' +
+            ' fazendo o site ser um site sem nenhum mocking.',
+            postNo: '00004',
+            code: '&lt;% posts.each do %&gt;<br>&emsp;|p|<br>&emsp;&lt;%= p.title %&gt;<br>&lt;% end %&gt;',
+        },
+        {
             title: 'Canais de Youtube relacionados a programação',
             text: '&emsp;Há um tempo, venho recomendando alguns canais de Youtube para amigos e ' +
             'colegas de classe. Decidi então fazer uma lista de alguns canais, a maioria sem muito reconhecimento, que alguns podem se interessar.',
