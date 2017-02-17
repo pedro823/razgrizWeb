@@ -30,19 +30,29 @@ function($scope) {
 app.controller('PostList', ['$scope',
 function($scope) {
     $scope.postTexts = [
+        // {
+        //     title: 'Bem vindos, bixos 2017!',
+        //     text: '&emsp;Esse post é para vocês, principalmente do BCC, que entraram em 2017. Bem-vindos à USP! Aqui estarão algumas dicas para vocês ' +
+        //     'se virarem nessa grande universidade.'
+        //     date: new Date('2017', '2', '3'),
+        //     wholeText: '&emsp;Esse post é para vocês, principalmente do BCC, que entraram em 2017. Bem-vindos à USP! Aqui estarão algumas dicas para vocês ' +
+        //     'se virarem nessa grande universidade. Primeiro, coisas gerais e, mais a frente, específicos à computação. <br>' +
+        //     '',
+        //
+        // },
         {
             title: 'Começando a migração para Ruby',
             text: '&emsp;Embora a rede linux não suporte criação e manutenção de um servidor rails para os sites daqui, começei a migrar meu site para' +
             ' ruby on rails, para ver se funcionaria de um jeito legal. Assim, a criação de posts seria muito, muito mais fácil, e fora a experiência' +
-            ' que eu vou adquirir. Hackathons seriam 100x mais fáceis se eu souber rails na ponta da língua, por exemplo, criando databases rápidos e' +
-            ' fazendo o site ser um site sem nenhum mocking.',
+            ' que eu vou adquirir. Hackathons seriam 100x mais fáceis se eu souber rails na ponta da língua, por exemplo, criando databases rapidamente e' +
+            ' fazendo o site ser um site, sem nenhum mocking.',
             date: new Date('2017', '2', '3'),
             wholeText: '&emsp;Embora a rede linux não suporte criação e manutenção de um servidor rails para os sites daqui, começei a migrar meu site para' +
             ' ruby on rails, para ver se funcionaria de um jeito legal. Assim, a criação de posts seria muito, muito mais fácil, e fora a experiência' +
             ' que eu vou adquirir. Hackathons seriam 100x mais fáceis se eu souber rails na ponta da língua, por exemplo, criando databases rápidos e' +
             ' fazendo o site ser um site sem nenhum mocking.',
             postNo: '00004',
-            code: '&lt;% posts.each do %&gt;<br>&emsp;|p|<br>&emsp;&lt;%= p.title %&gt;<br>&lt;% end %&gt;',
+            code: '&lt;% posts.each do %&gt;<br>&emsp;&emsp;|p|<br>&emsp;&emsp;&lt;%= p.title %&gt;<br>&lt;% end %&gt;',
         },
         {
             title: 'Canais de Youtube relacionados a programação',
