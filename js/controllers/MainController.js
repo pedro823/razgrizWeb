@@ -12,17 +12,12 @@ function readJSON(file) {
 }
 app.controller('News', ['$scope',
 function($scope) {
-    $scope.lastChange = new Date('2016', '9', '24');
+    $scope.lastChange = new Date('2017', '2', '28');
     $scope.lastNews = [
         {
-            title: "só um teste para ver se tá legal",
-            date: new Date('2016', '9', '24'),
-            link: 'http://www.google.com',
-        },
-        {
-            title: 'mais um para ver se tá bonito',
-            date: new Date('2016', '9', '24'),
-            link: 'http://facebook.com'
+            title: "SHA-1 é declarado morto pela google: primeira colisão de hash",
+            date: new Date('2017', '2', '28'),
+            link: 'http://www.shattered.io',
         }
     ];
 
