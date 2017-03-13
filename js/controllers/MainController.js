@@ -47,7 +47,7 @@ function($scope) {
             ' que eu vou adquirir. Hackathons seriam 100x mais fáceis se eu souber rails na ponta da língua, por exemplo, criando databases rápidos e' +
             ' fazendo o site ser um site sem nenhum mocking.',
             postNo: '00004',
-            code: '&lt;% posts.each do %&gt;<br>&emsp;&emsp;|p|<br>&emsp;&emsp;&lt;%= p.title %&gt;<br>&lt;% end %&gt;',
+            code: '&lt;% posts.each do |p| %&gt;<br>&emsp;&emsp;&lt;%= p.title %&gt;<br>&lt;% end %&gt;',
         },
         {
             title: 'Canais de Youtube relacionados a programação',
@@ -148,7 +148,17 @@ function($scope) {
         }
     };
 }]);
+app.controller('PDFlist', ['$scope',
+function($scope) {
+    $scope.pdfs = [
+        {
+            title: 'MAC0105: teste',
+            description: 'esse PDF é um teste bem loco',
+            link: 'yoooo.html'
+        },
+    ];
 
+}]);
 app.controller('ProjectList', ['$scope',
 function($scope) {
     // $scope.projects = readJSON('https://linux.ime.usp.br/~razgrizone/info/projectList.json');
