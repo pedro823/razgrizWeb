@@ -45,7 +45,7 @@ function($scope) {
             wholeText: '&emsp;Embora a rede linux não suporte criação e manutenção de um servidor rails para os sites daqui, começei a migrar meu site para' +
             ' ruby on rails, para ver se funcionaria de um jeito legal. Assim, a criação de posts seria muito, muito mais fácil, e fora a experiência' +
             ' que eu vou adquirir. Hackathons seriam 100x mais fáceis se eu souber rails na ponta da língua, por exemplo, criando databases rápidos e' +
-            ' fazendo o site ser um site sem nenhum mocking.',
+            ' fazendo o site ser um <b>site</b> sem nenhum mocking.',
             postNo: '00004',
             code: '&lt;% posts.each do |p| %&gt;<br>&emsp;&emsp;&lt;%= p.title %&gt;<br>&lt;% end %&gt;',
         },
@@ -152,9 +152,19 @@ app.controller('PDFlist', ['$scope',
 function($scope) {
     $scope.pdfs = [
         {
-            title: 'MAC0105: teste',
-            description: 'esse PDF é um teste bem loco',
-            link: 'yoooo.html'
+            title: 'RTFM: Red Team Field Manual',
+            description: 'Não, não é <i>Read The Fucking Manual</i>, esse manual é de grande auxílio para iniciantes em linux.',
+            link: 'https://watchthestack.files.wordpress.com/2015/03/rtfm-red-team-field-manual.pdf'
+        },
+        {
+            title: 'Black Hat Python: Python programming for hackers and pentesters',
+            description: 'Uma ótima fonte de Python para testes de penetração.',
+            link: 'https://pythonizame.s3.amazonaws.com/media/Book/black-hat-python/file/af0ef90e-83cf-11e5-964d-04015fb6ba01.pdf'
+        },
+        {
+            title: 'The Web Application Hacker\'s Handbook',
+            description: 'Livro que trata sobre exploits na web e como achá-las.',
+            link: 'https://leaksource.files.wordpress.com/2014/08/the-web-application-hackers-handbook.pdf'
         },
     ];
 
