@@ -25,16 +25,43 @@ function($scope) {
 app.controller('PostList', ['$scope',
 function($scope) {
     $scope.postTexts = [
-        // {
-        //     title: 'Bem vindos, bixos 2017!',
-        //     text: '&emsp;Esse post é para vocês, principalmente do BCC, que entraram em 2017. Bem-vindos à USP! Aqui estarão algumas dicas para vocês ' +
-        //     'se virarem nessa grande universidade.'
-        //     date: new Date('2017', '2', '3'),
-        //     wholeText: '&emsp;Esse post é para vocês, principalmente do BCC, que entraram em 2017. Bem-vindos à USP! Aqui estarão algumas dicas para vocês ' +
-        //     'se virarem nessa grande universidade. Primeiro, coisas gerais e, mais a frente, específicos à computação. <br>' +
-        //     '',
-        //
-        // },
+        {
+            title: 'Cifra de Vigenère, e quebrando ela',
+            text: '&emsp;Eu consegui quebrar a cifra de Vigenère usando apenas algumas análises estatísticas. Esse post é pra explicar como isso aconteceu, e é' +
+            ' uma boa introdução pra quem quer brincar de criptografia. <a target="_blank" href="https://github.com/pedro823/VigenereCipher">Link para o github do projeto.</a>',
+            date: new Date('2017', '5', '4'),
+            wholeText: '&emsp;Eu consegui quebrar a cifra de Vigenère usando apenas algumas análises estatísticas. Esse post é pra explicar como isso aconteceu, e é' +
+            ' uma boa introdução pra quem quer brincar de criptografia. <a target="_blank" href="https://github.com/pedro823/VigenereCipher">Link para o github do projeto.</a>' +
+            ' <br>&emsp;Conhecimentos prévios necessários para entender como o algoritmo funciona: <a target="_blankk" href="https://en.wikipedia.org/wiki/Caesar_cipher">Cifra de César</a>,' +
+            ' <a target="_blank" href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">cifra de Vigenère</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Frequency_analysis">Análise de frequência</a>,' +
+            ' e Python para ler o código.' +
+            '<br>&emsp;Para quebrar a cifra, é necessário saber a tabela de frequência da língua na qual a mensagem está codificada. No meu exemplo, utilizei a língua inglesa.' +
+            ' <a href="">Nessa imagem</a>, é possível perceber que a letra \'e\' é a que mais aparece (por volta de 12%) no inglês, seguida pela letra \'t\' e a letra \'a\'. Isso é utilizado, primeiramente, para chutar' +
+            ' o tamanho da chave no texto: primeiro, note que, dado tamanho de chave n, a letra 0 será encriptada com a letra 0 da chave, a letra 1 com a letra 1 da chave...' +
+            ' a letra n-1 do texto com a letra n-1 da chave, e a letra n do texto... de volta com a letra 0 da chave. Portanto, ao separar o texto em n segmentos, cada sequência de letras' +
+            ' é composta pelas letras que foram encriptadas pela mesma letra da chave.<br>&emsp;Então, após chutar um tamanho de chave e separar o texto em segmentos, o problema se reduz em várias cifras de César.' +
+            ' Logo, é necessário resolver essas cifras comparando cada \'shift\' possível (de +0 a +25) com a tabela de frequência do inglês, e assim ver qual é a letra mais plausível. Se mesmo a letra mais plausível' +
+            ' ainda é muito distante da tabela inglesa (definindo distância de uma tabela a outra pelo <a href="https://en.wikipedia.org/wiki/Chi-squared_test">teste chi-quadrado</a> com 25 graus de liberdade), ' +
+            'é porque o tamanho da chave está errado em primeiro lugar (e assim volta-se ao começo). Se todas as letras passarem do teste de distância, então foi encontrada uma chave plausível.',
+            postNo: '00006',
+            code: '<span style="color: #7d00b7;">for</span> i <span style="color: #7d00b7">in</span> <span style="color: #be0000">self</span>.text:' +
+                        '<br>&emsp;&emsp;<span style="color: #7d00b7">if</span> i <span style="color: #7d00b7">not in</span> VigenereCracker.AllowedCharacters:' +
+                            '<br>&emsp;&emsp;&emsp;&emsp;fragment[counter % size] += i' +
+                            '<br>&emsp;&emsp;&emsp;&emsp;counter += <span style="color: #ba8003">1</span>',
+        },
+        {
+            title: 'IMEsec',
+            text: '&emsp;Há um novo grupo de extensão no IME surgindo: O grupo de segurança da informação, chamado IMEsec.',
+            date: new Date('2017', '5', '4'),
+            wholeText: '&emsp;Há um novo grupo de extensão no IME surgindo: O grupo de segurança da informação, chamado IMEsec.' +
+            '<br>Esse grupo começou sendo uma ideia que alguns ingressantes de 2017 tiveram no começo do ano, que logo virou um chat de Telegram entre mim, alguns' +
+            ' representantes do BCC-IME, e alguns outros veteranos interessados em engenharia reversa, exploits de web, e criptografia. Começamos a nos reunir toda sexta-feira' +
+            ' e assim o grupo começou a \'engatar\'. Estamos trabalhando para conseguir acesso a alguns laboratórios (principalmente o de extensão - LabX), e logo mais vamos divulgar' +
+            ' nossa existência. Se você (do IME) estiver interessado em entrar nesse grupo, ou consiga contato de algum de nós com alguém, ou mande um e-mail pra mim em' +
+            ' <i>razgrizone arroba linux ponto ime ponto usp ponto br</i>.',
+            postNo: '00005',
+            code: 'int main() {<br>&emsp;char buffer[200];<br>&emsp;// exploit me!<br>&emsp;gets(buffer);<br>&emsp;return 0<br>}',
+        },
         {
             title: 'Começando a migração para Ruby',
             text: '&emsp;Embora a rede linux não suporte criação e manutenção de um servidor rails para os sites daqui, começei a migrar meu site para' +
