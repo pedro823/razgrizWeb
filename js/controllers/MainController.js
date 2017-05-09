@@ -201,6 +201,17 @@ function($scope) {
     // $scope.projects = readJSON('https://linux.ime.usp.br/~razgrizone/info/projectList.json');
     $scope.projects = [
         {
+            title: 'Capture The Flag CryptoRave 2017',
+            type: 'Capture The Flag',
+            description: 'Segundo lugar no Capture The Flag da <a href="https://cryptorave.org/">CryptoRave</a> de 2017. Os desafios eram sobre vários ambitos de <i>hacking</i>:' +
+            ' binary reversing, exploits de web, steganografia, quebrar uma wi-fi, e até mesmo lockpicking. Formamos um time na hora, o time \'lambda\', que até o final do dia, somou 1040 pontos' +
+            ' e ficou em segundo lugar na competição.',
+            date: new Date('2017', '5', '6'),
+            image: 'CTFCR2017.jpg',
+            subtitle: 'Time lambda, junto com os organizadores do evento.',
+            link: 'https://shellterlabs.com/en/ctf-master/cryptorave/cryp70-ch405-2017/',
+        },
+        {
             title: 'HackathonUSP 2016',
             type: 'Hackathon',
             description: 'Menção honrosa na participação do Hackathon feito pela USP em colaboração com a IBM.' +
