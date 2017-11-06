@@ -13,23 +13,18 @@
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/raz.css">
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Github octicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
     <!-- Js scripts -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/npm.js"></script>
      <script src="js/razgriz.js"></script>
-     <!-- Angular modules -->
+     <!-- Posts module  -->
      <script src="js/app.js"></script>
-     <!-- Angular Controllers -->
+     <!-- Posts controllers -->
      <script src="js/controllers/MainController.js"></script>
 </head>
 <body ng-app="RazgrizOne">
-
 <header>
     <div class="container-fluid spaced text-center animated fadeInDown" id="header">
         <div class="w3-center w3-container" id="Title">
@@ -44,26 +39,28 @@
             <em>Pedro Pereira, IME - USP</em>
         </div>
     </div>
-    <ul class="w3-navbar w3-black w3-border w3-card-4 animated fadeInDown" style="border: 0px !important;" id="InitNavbar">
-        <li><a class="w3-hover-red" href="bio.html"><b>Bio</b></a></li>
+    <ul class="w3-navbar w3-border w3-black w3-card-4 animated fadeInDown" style="border: 0px !important;" id="InitNavbar">
+        <li><a class="w3-hover-red" href="#"><b>Bio</b></a></li>
         <li><a class="w3-hover-red" href="links.html"><b>Links</b></a></li>
         <li><a class="w3-hover-red" href="posts.html"><b>Posts</b></a></li>
         <li><a class="w3-hover-red" href="projects.html"><b>Projects</b></a></li>
         <li><a class="w3-hover-red" href="pdfs.html"><b>PDFs</b></a></li>
-        <li><a class="w3-hover-red" href="sandbox.html"><b>Sandbox</b></a></li>
+        <li><a class="w3-red w3-hover-white" href="#"><b>Sandbox</b></a></li>
     </ul>
 </header>
 <br /><br />
-<div class="wrapper-center" ng-controller="PDFlist">
-    <div class="w3-card-8 animated fadeInUp" style="margin-left: 18%; margin-right:18%; margin-bottom:40px;" ng-repeat="pdf in pdfs">
-        <div ng-attr-id="{{ pdf.id }}" class="spaced w3-black">
-            <h1>{{ pdf.title }}</h1>
-            <p style="font-size: 13px;">{{ post.date | date }}</p>
-        </div>
-        <div class="expanded-segment-square" style="padding-top: 15px; padding-bottom: 5px; padding-left: 30px; padding-right: 30px;">
-            <p class="blue-links" ng-bind-html="pdf.description"></p>
-            <br />
-            <a ng-href="{{ pdf.link }}" class="w3-btn w3-black w3-hover-red"><span class="octicon octicon-plus"><b> Ver</b></span></a>
-        </div>
+<div class="wrapper-center" ng-controller="SandboxList">
+  <div class="w3-card-8 animated fadeInUp" style="margin-left: 18%; margin-right: 18%; margin-bottom: 40%" ng-repeat="post in sandbox">
+    <div class="spaced w3-red">
+      <h1>{{ post.title }}</h1>
+      <p style="font-size: 13px;">{{ post.date | date }}</p>
     </div>
+    <div class="expanded-segment-square" style="padding-top: 15px; padding-bottom: 5px; padding-left: 30px; padding-right: 30px;">
+      <p class="blue-links" ng-bind-html="post.description"></p>
+      <br />
+      <a ng-href="{{ post.link }}" class="w3-btn w3-red w3-hover-white"><span class="octicon octicon-search"></span><b> Link</b></a>
+    </div>
+  </div>
 </div>
+</body>
+</html>
