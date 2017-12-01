@@ -198,6 +198,16 @@ app.controller('ProjectList', ['$scope',
     // $scope.projects = readJSON('https://linux.ime.usp.br/~razgrizone/info/projectList.json');
     $scope.projects = [
       {
+        title: 'HackathonUSP 2017',
+        type: 'Hackathon',
+        description: 'Participação no HackathonUSP do segundo semestre de 2017, de tema \'Ética em pesquisa científica\'.' +
+                     '<br>O grupo contou com Pedro Pereira, Bruno Carneiro, Daniel Martinez e Artur Magalhães.',
+        date: new Date('2017', '11', '6'),
+        image: 'hackathonusp2017.jpg',
+        'subtitle': 'Eu, Daniel e Artur desenhando o que faríamos.',
+        link: 'https://hackathonusp2017.devpost.com/submissions'
+      },
+      {
         title: 'Capture The Flag CryptoRave 2017',
         type: 'Capture The Flag',
         description: 'Segundo lugar no Capture The Flag da <a href="https://cryptorave.org/">CryptoRave</a> de 2017. Os desafios eram sobre vários ambitos de <i>hacking</i>:' +
